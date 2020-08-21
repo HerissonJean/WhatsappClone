@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WhatsApp</string>
+
+    <!-- Login e cadastro -->
+    <string name="Nome">Nome</string>
+    <string name="Email">E-mail</string>
+    <string name="Senha">Senha</string>
+    <string name="bt_cadastro">Cadastrar</string>
+    <string name="bt_Logar">Login</string>
+    <string name="textV_Cadastre_se">Não tem uma conta? Cadastre-se</string>
+
+    <!-- Principal -->
+    <string name="pesquisar">Pesquisar</string>
+    <string name="sair">Sair</string>
+    <string name="configuracao">Configurações</string>
+
+
+</resources>
