@@ -8,4 +8,17 @@
     <color name="textWhite">#ffffff</color>
     <color name="textBlack">#000000</color>
 
+    <!-- Text Color -->
+    <color name="backgroundConfig">#eeeeee</color>
+
+    <!-- Color balao remetente-->
+    <color name="balaoRemetente">#dbf9c4</color>
+
+    <color name="ic_foto">#565656</color>
+    <color name="background_cinza">#E3DEDE</color>
+
+
+
+
+
 </resources>

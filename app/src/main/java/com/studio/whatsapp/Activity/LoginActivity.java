@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.InputType;
 import android.view.View;
 import android.widget.Toast;
 
@@ -16,8 +15,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
-import com.google.firebase.auth.FirebaseAuthUserCollisionException;
-import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
 import com.studio.whatsapp.Config.ConfiguracaoFirebase;
 import com.studio.whatsapp.Model.Usuario;
@@ -33,8 +30,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        campoEmail = findViewById(R.id.InputT_login_email);
-        campoSenha = findViewById(R.id.InputT_login_senha);
+        campoEmail = findViewById(R.id.InputText_login_email);
+        campoSenha = findViewById(R.id.InputText_login_senha);
 
         autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
     }

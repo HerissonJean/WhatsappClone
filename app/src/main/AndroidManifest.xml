@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.studio.whatsapp">
 
+    <uses-feature
+        android:name="android.hardware.camera2 "
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +16,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.PrincipalActivity"></activity>
+        <activity
+            android:name=".Activity.CadastroGrupoActivity"
+            android:label="@string/title_activity_cadastro_grupo"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Activity.GrupoActivity"
+            android:label="@string/title_activity_grupo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.ConfiguracoesActivity"
+            android:parentActivityName=".Activity.PrincipalActivity" />
+        <activity android:name=".Activity.PrincipalActivity" />
         <activity android:name=".Activity.CadastroActivity" />
         <activity android:name=".Activity.LoginActivity">
             <intent-filter>
